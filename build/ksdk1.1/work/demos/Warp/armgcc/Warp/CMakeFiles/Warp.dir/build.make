@@ -505,6 +505,30 @@ CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/boards/Warp/gpio
 CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/boards/Warp/gpio_pins.c.obj.provides.build: CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/boards/Warp/gpio_pins.c.obj
 
 
+CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.obj: CMakeFiles/Warp.dir/flags.make
+CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.obj: /home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.obj"
+	/usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.obj   -c /home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c
+
+CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.i"
+	/usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c > CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.i
+
+CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.s"
+	/usr/bin/arm-none-eabi-gcc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c -o CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.s
+
+CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.obj.requires:
+
+.PHONY : CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.obj.requires
+
+CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.obj.provides: CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.obj.requires
+	$(MAKE) -f CMakeFiles/Warp.dir/build.make CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.obj.provides.build
+.PHONY : CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.obj.provides
+
+CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.obj.provides.build: CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.obj
+
+
 # Object files for target Warp
 Warp_OBJECTS = \
 "CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/platform/utilities/src/fsl_misc_utilities.c.obj" \
@@ -525,7 +549,8 @@ Warp_OBJECTS = \
 "CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/platform/drivers/src/spi/fsl_spi_irq.c.obj" \
 "CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/platform/startup/MKL03Z4/system_MKL03Z4.c.obj" \
 "CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/platform/startup/startup.c.obj" \
-"CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/boards/Warp/gpio_pins.c.obj"
+"CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/boards/Warp/gpio_pins.c.obj" \
+"CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.obj"
 
 # External object files for target Warp
 Warp_EXTERNAL_OBJECTS =
@@ -549,10 +574,11 @@ release/Warp.elf: CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/wor
 release/Warp.elf: CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/platform/startup/MKL03Z4/system_MKL03Z4.c.obj
 release/Warp.elf: CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/platform/startup/startup.c.obj
 release/Warp.elf: CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/boards/Warp/gpio_pins.c.obj
+release/Warp.elf: CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.obj
 release/Warp.elf: CMakeFiles/Warp.dir/build.make
 release/Warp.elf: ../../../../lib/ksdk_platform_lib/armgcc/KL03Z4/release/libksdk_platform.a
 release/Warp.elf: CMakeFiles/Warp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking C executable release/Warp.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking C executable release/Warp.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Warp.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/arm-none-eabi-objcopy -Oihex /home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/release/Warp.elf /home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/release/Warp.hex
 	/usr/bin/arm-none-eabi-objcopy -Obinary /home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/release/Warp.elf /home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/armgcc/Warp/release/Warp.bin
@@ -582,6 +608,7 @@ CMakeFiles/Warp.dir/requires: CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build
 CMakeFiles/Warp.dir/requires: CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/platform/startup/MKL03Z4/system_MKL03Z4.c.obj.requires
 CMakeFiles/Warp.dir/requires: CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/platform/startup/startup.c.obj.requires
 CMakeFiles/Warp.dir/requires: CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/boards/Warp/gpio_pins.c.obj.requires
+CMakeFiles/Warp.dir/requires: CMakeFiles/Warp.dir/home/ys467/Warp-firmware/build/ksdk1.1/work/demos/Warp/src/devSSD1331.c.obj.requires
 
 .PHONY : CMakeFiles/Warp.dir/requires
 
