@@ -78,6 +78,7 @@
 //#include "devAS7262.h"
 //#include "devAS7263.h"
 //#include "devRV8803C7.h"
+#	include "devSSD1331.h"
 #else
 #	include "devMMA8451Q.h"
 #endif
