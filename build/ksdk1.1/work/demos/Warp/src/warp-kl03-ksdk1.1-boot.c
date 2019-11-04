@@ -96,7 +96,7 @@
 #define						kWarpConstantStringI2cFailure		"\rI2C failed, reg 0x%02x, code %d\n"
 #define						kWarpConstantStringErrorInvalidVoltage	"\rInvalid supply voltage [%d] mV!"
 #define						kWarpConstantStringErrorSanity		"\rSanity check failed!"
-
+int devSSD1331init(void);
 
 #ifdef WARP_BUILD_ENABLE_DEVADXL362
 volatile WarpSPIDeviceState			deviceADXL362State;
@@ -1014,6 +1014,7 @@ checkSum(uint8_t *  pointer, uint16_t length) /*	Adapted from https://stackoverf
 int
 main(void)
 {
+	devSSD1331init();
 	uint8_t					key;
 	WarpSensorDevice			menuTargetSensor = kWarpSensorBMX055accel;
 	volatile WarpI2CDeviceState *		menuI2cDevice = NULL;
