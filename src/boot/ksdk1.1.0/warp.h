@@ -33,16 +33,18 @@ typedef enum
 	kWarpTypeMaskLambda570Y		= (1 << 19),
 	kWarpTypeMaskLambda600O		= (1 << 20),
 	kWarpTypeMaskLambda650R		= (1 << 21),
-	
+
 	kWarpTypeMaskLambda610R		= (1 << 22),
 	kWarpTypeMaskLambda680S		= (1 << 23),
 	kWarpTypeMaskLambda730T		= (1 << 24),
 	kWarpTypeMaskLambda760U		= (1 << 25),
 	kWarpTypeMaskLambda810V		= (1 << 26),
 	kWarpTypeMaskLambda860W		= (1 << 27),
-	
+
 	kWarpTypeMaskTotalVOC		= (1 << 28),
 	kWarpTypeMaskEquivalentCO2	= (1 << 29),
+
+	kWarpTypeMaskCurrent			= (1 << 30),
 
 
 	/*
@@ -94,7 +96,7 @@ typedef enum
 	kWarpStatusBadDeviceCommand,
 
 	/*
-	 *	Generic comms error 
+	 *	Generic comms error
 	 */
 	kWarpStatusCommsError,
 
@@ -155,6 +157,7 @@ typedef enum
 	kWarpSensorAS7262,
 	kWarpSensorAS7263,
 	kWarpSensorSCD30,
+	kWarpSensorINA219,
 } WarpSensorDevice;
 
 typedef enum
@@ -223,6 +226,8 @@ typedef enum
 	kWarpSensorConfigurationRegisterBME680CalibrationRegion1End	= 0xA2,
 	kWarpSensorConfigurationRegisterBME680CalibrationRegion2Start	= 0xE1,
 	kWarpSensorConfigurationRegisterBME680CalibrationRegion2End	= 0xF2,
+
+	kWarpSensorConfigurationRegisterINA219											= 0x00,
 } WarpSensorConfigurationRegister;
 
 typedef enum
@@ -291,6 +296,8 @@ typedef enum
 	kWarpSensorOutputRegisterBME680temp_xlsb			= 0x24,
 	kWarpSensorOutputRegisterBME680hum_msb				= 0x25,
 	kWarpSensorOutputRegisterBME680hum_lsb				= 0x26,
+
+	kWarpSensorOutputRegisterINA219								= 0x04,
 } WarpSensorOutputRegister;
 
 typedef struct

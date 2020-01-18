@@ -84,7 +84,7 @@ ELSEIF(CMAKE_BUILD_TYPE MATCHES Release)
 ENDIF()
 
 # ADD_EXECUTABLE
-ADD_EXECUTABLE(Warp 
+ADD_EXECUTABLE(Warp
     "${ProjDirPath}/../../../../platform/utilities/src/fsl_misc_utilities.c"
     "${ProjDirPath}/../../../../platform/startup/MKL03Z4/gcc/startup_MKL03Z4.S"
     "${ProjDirPath}/../../src/warp-kl03-ksdk1.1-boot.c"
@@ -117,6 +117,10 @@ ADD_EXECUTABLE(Warp
     "${ProjDirPath}/../../../../boards/Warp/gpio_pins.h"
     "${ProjDirPath}/../../src/devSSD1331.c"
     "${ProjDirPath}/../../src/devSSD1331.h"
+    "${ProjDirPath}/../../src/devMQ7.c"
+    "${ProjDirPath}/../../src/devMQ7.h"
+    "${ProjDirPath}/../../src/devHPA17F.c"
+    "${ProjDirPath}/../../src/devHPA17F.h"
 )
 SET_TARGET_PROPERTIES(Warp PROPERTIES OUTPUT_NAME "Warp.elf")
 
